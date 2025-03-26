@@ -28,7 +28,7 @@ export function About() {
           >
             <div className="mb-8">
               <img
-                src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80"
+                src="/2.jpg"
                 alt="Profile"
                 className="rounded-full w-48 h-48 object-cover mx-auto border-4 border-purple-500 shadow-lg"
               />
