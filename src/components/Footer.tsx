@@ -40,7 +40,7 @@ export function Footer() {
                 { Icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
                 { Icon: Phone, href: 'https://wa.me/yourwhatsappnumber', label: 'WhatsApp' },
                 { Icon: Mail, href: 'mailto:contact@example.com', label: 'Email' },
-              ].map(({ Icon, href, label }) => (
+              ].map(({ Icon, href }) => (
                 <motion.a
                   key={href}
                   href={href}

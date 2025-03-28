@@ -3,7 +3,6 @@ import { Background } from './components/Background';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
-import { Testimonials } from './components/Testimonials';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
@@ -18,7 +17,7 @@ function App() {
         <Navigation isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} />
         <Hero />
         <About />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Skills />
         <Projects />
         <Footer />

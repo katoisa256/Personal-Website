@@ -30,11 +30,11 @@ export function Hero() {
           className="flex justify-center space-x-6 mb-12"
         >
           {[
-            { Icon: Github, href: 'https://github.com', label: 'GitHub' },
+            { Icon: Github, href: 'https://github.com/KatoIsa256', label: 'GitHub' },
             { Icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
             { Icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-            { Icon: Phone, href: 'https://wa.me/yourwhatsappnumber', label: 'WhatsApp' },
-            { Icon: Mail, href: 'mailto:contact@example.com', label: 'Email' },
+            { Icon: Phone, href: 'https://wa.me/+256705207718', label: 'WhatsApp' },
+            { Icon: Mail, href: 'mailto:katoisa256@gmail.com', label: 'Email' },
           ].map(({ Icon, href, label }) => (
             <motion.a
               key={href}
