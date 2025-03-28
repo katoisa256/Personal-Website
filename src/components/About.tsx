@@ -1,19 +1,4 @@
 import { motion } from 'framer-motion';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Sphere } from '@react-three/drei';
-
-function FloatingSphere() {
-  return (
-    <Sphere args={[1, 32, 32]}>
-      <meshStandardMaterial
-        color="#8b5cf6"
-        wireframe
-        transparent
-        opacity={0.5}
-      />
-    </Sphere>
-  );
-}
 
 export function About() {
   return (
@@ -52,20 +37,6 @@ export function About() {
                 the developer community in Kampala.
               </p>
             </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="h-[400px]"
-          >
-            <Canvas camera={{ position: [0, 0, 3] }}>
-              <ambientLight intensity={0.5} />
-              <pointLight position={[10, 10, 10]} />
-              <FloatingSphere />
-              <OrbitControls enableZoom={false} autoRotate />
-            </Canvas>
           </motion.div>
         </div>
       </div>

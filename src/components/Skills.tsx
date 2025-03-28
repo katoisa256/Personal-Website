@@ -1,7 +1,4 @@
 import { motion } from 'framer-motion';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Text3D, Center } from '@react-three/drei';
-import { Suspense } from 'react';
 
 const skills = [
   {
@@ -20,24 +17,6 @@ const skills = [
     description: "Implementing efficient development workflows and deployment strategies."
   }
 ];
-
-function Skill3D({ text }: { text: string }) {
-  return (
-    <Suspense fallback={null}>
-      <Center>
-        <Text3D
-          font="/fonts/helvetiker_regular.typeface.json"
-          size={0.5}
-          height={0.2}
-          curveSegments={12}
-        >
-          {text}
-          <meshStandardMaterial color="#8b5cf6" />
-        </Text3D>
-      </Center>
-    </Suspense>
-  );
-}
 
 function FallbackSkillCard({ category, items, description }: {
   category: string;
@@ -86,15 +65,6 @@ export function Skills() {
           {skills.map((skill) => (
             <FallbackSkillCard key={skill.category} {...skill} />
           ))}
-        </div>
-
-        <div className="mt-20 h-[400px] hidden md:block">
-          <Canvas camera={{ position: [0, 0, 5] }}>
-            <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
-            <Skill3D text="Full Stack Developer" />
-            <OrbitControls enableZoom={false} autoRotate />
-          </Canvas>
         </div>
       </div>
     </section>

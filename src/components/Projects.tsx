@@ -1,7 +1,4 @@
 import { motion } from 'framer-motion';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Box } from '@react-three/drei';
-import { Suspense } from 'react';
 
 const projects = [
   {
@@ -26,14 +23,6 @@ const projects = [
     link: "#"
   }
 ];
-
-function Project3D() {
-  return (
-    <Box args={[1, 1, 1]}>
-      <meshStandardMaterial color="#8b5cf6" wireframe />
-    </Box>
-  );
-}
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
   return (
@@ -88,17 +77,6 @@ export function Projects() {
           {projects.map((project, index) => (
             <ProjectCard key={project.title} project={project} index={index} />
           ))}
-        </div>
-
-        <div className="mt-20 h-[400px] hidden md:block">
-          <Canvas camera={{ position: [0, 0, 5] }}>
-            <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
-            <Suspense fallback={null}>
-              <Project3D />
-            </Suspense>
-            <OrbitControls enableZoom={false} autoRotate />
-          </Canvas>
         </div>
       </div>
     </section>
