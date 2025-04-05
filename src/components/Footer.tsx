@@ -35,11 +35,11 @@ export function Footer() {
             <h3 className="text-xl font-bold mb-4">Connect</h3>
             <div className="flex space-x-4">
               {[
-                { Icon: Github, href: 'https://github.com', label: 'GitHub' },
-                { Icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-                { Icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-                { Icon: Phone, href: 'https://wa.me/yourwhatsappnumber', label: 'WhatsApp' },
-                { Icon: Mail, href: 'mailto:contact@example.com', label: 'Email' },
+                { Icon: Github, href: 'https://github.com/KatoIsa256', label: 'GitHub' },
+                { Icon: Linkedin, href: 'www.linkedin.com/in/kato-omoding-932972206', label: 'LinkedIn' },
+                { Icon: Instagram, href: 'https://www.instagram.com/katoisa256/', label: 'Instagram' },
+                { Icon: Phone, href: 'https://wa.me/+256705207718', label: 'WhatsApp' },
+                { Icon: Mail, href: 'mailto:katoisa256@gmail.com', label: 'Email' },
               ].map(({ Icon, href }) => (
                 <motion.a
                   key={href}
