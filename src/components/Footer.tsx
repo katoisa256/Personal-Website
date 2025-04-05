@@ -36,7 +36,7 @@ export function Footer() {
             <div className="flex space-x-4">
               {[
                 { Icon: Github, href: 'https://github.com/KatoIsa256', label: 'GitHub' },
-                { Icon: Linkedin, href: 'www.linkedin.com/in/kato-omoding-932972206', label: 'LinkedIn' },
+                { Icon: Linkedin, href: 'https://www.linkedin.com/in/kato-omoding-932972206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', label: 'LinkedIn' },
                 { Icon: Instagram, href: 'https://www.instagram.com/katoisa256/', label: 'Instagram' },
                 { Icon: Phone, href: 'https://wa.me/+256705207718', label: 'WhatsApp' },
                 { Icon: Mail, href: 'mailto:katoisa256@gmail.com', label: 'Email' },
