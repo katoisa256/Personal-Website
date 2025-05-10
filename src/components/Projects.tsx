@@ -90,15 +90,6 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           ))}
         </div>
         <div className="flex gap-4">
-          {/* <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
-          >
-            <Github size={20} />
-            <span>Code</span>
-          </a> */}
           <a
             href={project.liveLink}
             target="_blank"

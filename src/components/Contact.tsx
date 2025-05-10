@@ -3,7 +3,7 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline
 
 export function Contact() {
   return (
-    <section id='contact' className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id='contact' className="min-h-screen py-20 px-6">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left Column - Contact Form */}
         <motion.div
