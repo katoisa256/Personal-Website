@@ -3,9 +3,17 @@ import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: "Photo Security App",
+    title: "Rentify Website",
+    description: "A website for a real estate company specializing in property rentals.",
+    image: "/rentify.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    liveLink: "https://www.rentify.co.ug/home",
+    githubLink: "#",
+  },
+  {
+    title: "Camera Security App",
     description: "A comprehensive security application intended to keep people safe.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/CameraSecurityApp.png",
     technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
     liveLink: "https://www.photosecurityapp.info/",
     githubLink: "#",
@@ -13,15 +21,23 @@ const projects = [
   {
     title: "DH Technologies Website",
     description: "A corporate website for DH Technologies showcasing services and solutions.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/dh-technologies.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
     liveLink: "https://dhtechnologies.it.com/",
     githubLink: "#",
   },
   {
+    title: "Zoe Design Consult",
+    description: "A website for a design consultancy firm specializing in interior and architectural design.",
+    image: "/zoe-design.png",
+    technologies: ["Next.js", "Contentful CMS", "GraphQL", "Vercel"],
+    liveLink: "https://www.zoedesignconsult.org/",
+    githubLink: "#",
+  },
+  {
     title: "Kasule Jacob Portfolio",
     description: "A personal portfolio website with modern design and animations.",
-    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/KauleJacob.png",
     technologies: ["React", "Three.js", "GSAP", "Framer Motion"],
     liveLink: "https://kasulejacob.pro",
     githubLink: "#",
@@ -29,19 +45,19 @@ const projects = [
   {
     title: "Sozi Kraal Hotel Website",
     description: "An elegant hotel website with a booking system and virtual tours.",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/SoziKraalHotel.png",
     technologies: ["Next.js", "Stripe", "MongoDB", "Cloudinary"],
     liveLink: "https://sozikraalhotel.com",
     githubLink: "#",
   },
-  {
-    title: "Betting Robot",
-    description: "An automated betting system with AI-powered predictions.",
-    image: "https://images.unsplash.com/photo-1607863680198-23d4b2565df0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    technologies: ["Python", "TensorFlow", "FastAPI", "React"],
-    liveLink: "https://betting-robot-v0.vercel.app/",
-    githubLink: "#",
-  }
+  // {
+  //   title: "Betting Robot",
+  //   description: "An automated betting system with AI-powered predictions.",
+  //   image: "/betting-robot.png",
+  //   technologies: ["Python", "TensorFlow", "FastAPI", "React"],
+  //   liveLink: "https://betting-robot-v0.vercel.app/",
+  //   githubLink: "#",
+  // }
 ];
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
@@ -90,7 +106,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
             className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
           >
             <ExternalLink size={20} />
-            <span>Live Demo</span>
+            <span>Visit Platform</span>
           </a>
         </div>
       </div>
@@ -118,7 +134,7 @@ export function Projects() {
           ))}
         </div>
 
-        
+
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ export function About() {
           >
             <div className="mb-8">
               <img
-                src="/2.jpg"
+                src="/2.png"
                 alt="Profile"
                 className="rounded-full w-48 h-48 object-cover mx-auto border-4 border-purple-500 shadow-lg"
               />
