@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const projects = [
   {
@@ -50,14 +51,6 @@ const projects = [
     liveLink: "https://sozikraalhotel.com",
     githubLink: "#",
   },
-  // {
-  //   title: "Betting Robot",
-  //   description: "An automated betting system with AI-powered predictions.",
-  //   image: "/betting-robot.png",
-  //   technologies: ["Python", "TensorFlow", "FastAPI", "React"],
-  //   liveLink: "https://betting-robot-v0.vercel.app/",
-  //   githubLink: "#",
-  // }
 ];
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
@@ -107,26 +100,34 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
 
 export function Projects() {
   return (
-    <section id="projects" className="min-h-screen py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
-        >
-          Featured Projects
-        </motion.h2>
+    <>
+      <Helmet>
+        <title>Projects - Kato Isa Omoding</title>
+        <meta
+          name="description"
+          content="Explore featured development projects by Kato Isa Omoding, including websites, applications, and platforms built with modern web technologies."
+        />
+      </Helmet>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard key={project.title} project={project} index={index} />
-          ))}
+      <section id="projects" className="min-h-screen py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
+          >
+            Featured Projects
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <ProjectCard key={project.title} project={project} index={index} />
+            ))}
+          </div>
         </div>
-
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
