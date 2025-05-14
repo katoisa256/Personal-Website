@@ -16,7 +16,7 @@ const projects = [
     description: "A comprehensive security application intended to keep people safe.",
     image: "/CameraSecurityApp.png",
     technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
-    liveLink: "https://www.photosecurityapp.info/",
+    liveLink: "https://www.camerasecurityapp.info/",
     githubLink: "#",
   },
   {
