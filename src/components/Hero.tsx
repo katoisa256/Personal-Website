@@ -52,15 +52,25 @@ export function Hero() {
           ))}
         </motion.div>
 
-        <motion.a
-          href="#projects"
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="inline-block px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all"
+          className="flex justify-center gap-4"
         >
-          View My Work
-        </motion.a>
+          <a href="#projects"
+            className="inline-block px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all"
+          >
+            View My Work
+          </a>
+
+          <a href="/Kato_CV.pdf" target="_blank" rel="noopener noreferrer"
+            className="inline-block px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all"
+          >
+            View CV
+          </a>
+        </motion.div>
+
       </div>
     </section>
   );
