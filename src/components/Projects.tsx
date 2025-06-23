@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 
 const projects = [
   {
-    title: "Rentify Website",
+    title: "Rentify Application",
     description: "A website for a real estate company specializing in property rentals.",
     image: "/rentify.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
@@ -43,14 +43,14 @@ const projects = [
     liveLink: "https://kasulejacob.pro",
     githubLink: "#",
   },
-  {
-    title: "Sozi Kraal Hotel Website",
-    description: "An elegant hotel website with a booking system and virtual tours.",
-    image: "/SoziKraalHotel.png",
-    technologies: ["Next.js", "Stripe", "MongoDB", "Cloudinary"],
-    liveLink: "https://sozikraalhotel.com",
-    githubLink: "#",
-  },
+  // {
+  //   title: "Sozi Kraal Hotel Website",
+  //   description: "An elegant hotel website with a booking system and virtual tours.",
+  //   image: "/SoziKraalHotel.png",
+  //   technologies: ["Next.js", "Stripe", "MongoDB", "Cloudinary"],
+  //   liveLink: "https://sozikraalhotel.com",
+  //   githubLink: "#",
+  // },
 ];
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
