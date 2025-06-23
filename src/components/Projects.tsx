@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
-import { Helmet } from 'react-helmet';
 
 const projects = [
   {
@@ -101,14 +100,6 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
 export function Projects() {
   return (
     <>
-      <Helmet>
-        <title>Projects - Kato Isa Omoding</title>
-        <meta
-          name="description"
-          content="Explore featured development projects by Kato Isa Omoding, including websites, applications, and platforms built with modern web technologies."
-        />
-      </Helmet>
-
       <section id="projects" className="min-h-screen py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.h2

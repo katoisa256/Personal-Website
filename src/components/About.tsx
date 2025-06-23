@@ -1,17 +1,8 @@
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
 
 export function About() {
   return (
     <>
-      <Helmet>
-        <title>About - Kato Isa Omoding</title>
-        <meta
-          name="description"
-          content="Learn more about Kato Isa Omoding, a Full Stack Developer based in Kampala, Uganda, who creates beautiful, functional web applications."
-        />
-      </Helmet>
-
       <section id="about" className="min-h-screen py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-1 gap-12 items-center">
