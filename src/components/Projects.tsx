@@ -10,6 +10,15 @@ const projects = [
     liveLink: "https://www.rentify.co.ug/",
     githubLink: "#",
   },
+  {
+    title: "Zoe Housing",
+    description: "A housing website for managing contraction projects, house designs and plans all in one platform and also buying properties.",
+    image: "/zoe-housing.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    liveLink: "https://housing.zoeforge.com/",
+    githubLink: "#",
+  },
+  
   // {
   //   title: "Camera Security App",
   //   description: "A comprehensive security application intended to keep people safe.",
@@ -27,11 +36,11 @@ const projects = [
     githubLink: "#",
   },
   {
-    title: "Zoe Design Consult",
-    description: "A website for a design consultancy firm specializing in interior and architectural design.",
+    title: "Zoe Design Forge",
+    description: "A website for a design forge firm specializing in interior and architectural design.",
     image: "/zoe-design.png",
     technologies: ["Next.js", "Contentful CMS", "GraphQL", "Vercel"],
-    liveLink: "https://www.zoedesignconsult.org/",
+    liveLink: "https://www.zoeforge.com/",
     githubLink: "#",
   },
   {
@@ -39,7 +48,7 @@ const projects = [
     description: "A personal portfolio website with modern design and animations.",
     image: "/KauleJacob.png",
     technologies: ["React", "Three.js", "GSAP", "Framer Motion"],
-    liveLink: "https://kasulejacob.pro",
+    liveLink: "https://www-kasulejacob-pro.vercel.app/",
     githubLink: "#",
   },
   // {
