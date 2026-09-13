@@ -7,7 +7,7 @@ const projects = [
     description: "A website for a real estate company specializing in property rentals.",
     image: "/rentify.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
-    liveLink: "https://www.rentify.co.ug/home",
+    liveLink: "https://www.rentify.co.ug/",
     githubLink: "#",
   },
   {
