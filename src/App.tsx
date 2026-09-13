@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Background } from './components/Background';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
-import { About } from './components/About';
+// import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
@@ -17,7 +17,7 @@ function App() {
         <Background />
         <Navigation isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} />
         <Hero />
-        <About />
+        {/* <About /> */}
         {/* <Testimonials /> */}
         <Skills />
         <Projects />
