@@ -44,6 +44,26 @@ export function Hero() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-2xl shadow-slate-900/20 lg:aspect-[5/6]">
             <img src="/2.png" alt="Kato Isa Omoding" className="h-full w-full object-cover object-center" />
           </div>
+          <div className="absolute bottom-20 left-0 flex flex-wrap gap-2 sm:-left-4">
+            <motion.a
+              href="#projects"
+              whileHover={{ y: -4 }}
+              whileTap={{ scale: 0.97 }}
+              className="rounded-full bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-slate-900/25 transition-colors hover:bg-blue-800"
+            >
+              My Work
+            </motion.a>
+            <motion.a
+              href="/Kato_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ y: -4 }}
+              whileTap={{ scale: 0.97 }}
+              className="rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 shadow-lg shadow-slate-900/15 transition-colors hover:border-blue-700 hover:text-blue-700 dark:border-slate-600 dark:bg-[#0c2036] dark:text-white dark:hover:border-blue-300 dark:hover:text-blue-300"
+            >
+              View CV
+            </motion.a>
+          </div>
           <div className="absolute -bottom-5 -left-4 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-xl dark:border-slate-700 dark:bg-[#0c2036] sm:-left-8">
             <p className="text-xs uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">Creating</p>
             <p className="mt-1 font-semibold">Websites, web apps &amp; mobile applications</p>
