@@ -34,7 +34,7 @@ export function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
+          className="text-4xl font-bold text-center mb-12 text-blue-700 dark:text-blue-300"
         >
           Client Testimonials
         </motion.h2>

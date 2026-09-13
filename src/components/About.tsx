@@ -16,10 +16,10 @@ export function About() {
                 <img
                   src="/2.png"
                   alt="Profile"
-                  className="rounded-full w-48 h-48 object-cover mx-auto border-4 border-purple-500 shadow-lg"
+                  className="rounded-full w-48 h-48 object-cover mx-auto border-4 border-blue-700 shadow-lg"
                 />
               </div>
-              <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
+              <h2 className="text-4xl font-bold mb-6 text-blue-700 dark:text-blue-300">
                 About Me
               </h2>
               <div className="space-y-4 text-gray-600 dark:text-gray-300">

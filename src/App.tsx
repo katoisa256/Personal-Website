@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className={isDarkMode ? 'dark' : ''}>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+      <div className="min-h-screen bg-white text-slate-900 dark:bg-[#071525] dark:text-white transition-colors duration-300">
         <Background />
         <Navigation isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} />
         <Hero />

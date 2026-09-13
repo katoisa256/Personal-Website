@@ -5,11 +5,11 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 px-6 bg-gray-100 dark:bg-gray-800">
+    <footer className="py-12 px-6 bg-slate-100 dark:bg-[#0c2036]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
+            <h3 className="text-xl font-bold mb-4 text-blue-700 dark:text-blue-300">
               Kato Isa Omoding
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
@@ -23,7 +23,7 @@ export function Footer() {
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className="text-gray-600 dark:text-gray-300 hover:text-purple-500 transition-colors"
+                    className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                   >
                     {item}
                   </a>
@@ -47,7 +47,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2 }}
-                  className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-purple-500 dark:hover:bg-purple-500 transition-colors"
+                  className="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-blue-700 dark:hover:bg-blue-700 transition-colors"
                 >
                   <Icon size={20} />
                 </motion.a>

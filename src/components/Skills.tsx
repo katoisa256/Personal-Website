@@ -29,15 +29,15 @@ function FallbackSkillCard({ category, items, description }: {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg"
+      className="bg-white dark:bg-[#0c2036] rounded-xl p-6 shadow-lg"
     >
-      <h3 className="text-xl font-bold mb-4 text-purple-500">{category}</h3>
+      <h3 className="text-xl font-bold mb-4 text-blue-700 dark:text-blue-300">{category}</h3>
       <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
       <div className="flex flex-wrap gap-2">
         {items.map((item) => (
           <span
             key={item}
-            className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm"
+            className="px-3 py-1 bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-200 rounded-full text-sm"
           >
             {item}
           </span>
@@ -56,7 +56,7 @@ export function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
+          className="text-4xl font-bold text-center mb-12 text-blue-700 dark:text-blue-300"
         >
           Skills & Expertise
         </motion.h2>

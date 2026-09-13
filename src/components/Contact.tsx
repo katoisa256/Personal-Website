@@ -13,7 +13,7 @@ export function Contact() {
           className="space-y-8"
         >
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-700 dark:text-blue-300">
               Get in Touch
             </h2>
             <p className="text-gray-600 dark:text-gray-300 text-lg">
@@ -31,7 +31,7 @@ export function Contact() {
                 <label className="block text-gray-700 dark:text-gray-300 mb-2">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-[#0c2036] border border-gray-300 dark:border-slate-700 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all"
                   placeholder="Enter your name"
                 />
               </motion.div>
@@ -44,7 +44,7 @@ export function Contact() {
                 <label className="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-[#0c2036] border border-gray-300 dark:border-slate-700 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all"
                   placeholder="Enter your email"
                 />
               </motion.div>
@@ -57,7 +57,7 @@ export function Contact() {
                 <label className="block text-gray-700 dark:text-gray-300 mb-2">Message</label>
                 <textarea
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-[#0c2036] border border-gray-300 dark:border-slate-700 focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all"
                   placeholder="Your message here..."
                 />
               </motion.div>
@@ -66,7 +66,7 @@ export function Contact() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg hover:shadow-xl transition-all"
+              className="w-full px-8 py-4 text-lg font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 hover:shadow-xl transition-all"
             >
               Send Message
             </motion.button>
@@ -78,12 +78,12 @@ export function Contact() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-col justify-center space-y-8 bg-gradient-to-br from-purple-500/10 to-cyan-500/10 p-8 rounded-xl"
+          className="flex flex-col justify-center space-y-8 bg-blue-50 dark:bg-[#0c2036] p-8 rounded-xl"
         >
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
-              <div className="p-3 bg-purple-500/20 rounded-full">
-                <PhoneIcon className="w-8 h-8 text-purple-500" />
+              <div className="p-3 bg-blue-100 dark:bg-blue-950 rounded-full">
+                <PhoneIcon className="w-8 h-8 text-blue-700 dark:text-blue-300" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Phone</h3>
@@ -92,8 +92,8 @@ export function Contact() {
             </div>
 
             <div className="flex items-center space-x-4">
-              <div className="p-3 bg-cyan-500/20 rounded-full">
-                <EnvelopeIcon className="w-8 h-8 text-cyan-500" />
+              <div className="p-3 bg-blue-100 dark:bg-blue-950 rounded-full">
+                <EnvelopeIcon className="w-8 h-8 text-blue-700 dark:text-blue-300" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Email</h3>
@@ -102,8 +102,8 @@ export function Contact() {
             </div>
 
             <div className="flex items-center space-x-4">
-              <div className="p-3 bg-purple-500/20 rounded-full">
-                <MapPinIcon className="w-8 h-8 text-purple-500" />
+              <div className="p-3 bg-blue-100 dark:bg-blue-950 rounded-full">
+                <MapPinIcon className="w-8 h-8 text-blue-700 dark:text-blue-300" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Location</h3>
@@ -115,7 +115,7 @@ export function Contact() {
           <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
             <div className="flex space-x-6 justify-center">
               {/* Add social media icons here */}
-              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-purple-500 transition-colors">
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
                 <span className="sr-only">Twitter</span>
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   {/* Twitter SVG path */}

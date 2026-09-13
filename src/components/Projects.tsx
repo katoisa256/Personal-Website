@@ -68,7 +68,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: index * 0.2 }}
       viewport={{ once: true }}
-      className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+      className="bg-white dark:bg-[#0c2036] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
     >
       <div className="relative h-48">
         <img
@@ -84,7 +84,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 text-xs bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full"
+              className="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-200 rounded-full"
             >
               {tech}
             </span>
@@ -95,7 +95,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
             href={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+            className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
           >
             <ExternalLink size={20} />
             <span>Visit Platform</span>
@@ -116,7 +116,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
+            className="text-4xl font-bold text-center mb-12 text-blue-700 dark:text-blue-300"
           >
             Featured Projects
           </motion.h2>

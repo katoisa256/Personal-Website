@@ -45,7 +45,7 @@ export function Navigation({ isDarkMode, toggleTheme }: NavigationProps) {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500"
+          className="text-2xl font-bold text-blue-700 dark:text-blue-300"
         >
           Kato Isa
         </motion.div>
@@ -57,7 +57,7 @@ export function Navigation({ isDarkMode, toggleTheme }: NavigationProps) {
               key={item}
               href={`#${item.toLowerCase()}`}
               whileHover={{ scale: 1.1 }}
-              className="text-sm font-medium hover:text-purple-500 transition-colors"
+              className="text-sm font-medium hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
             >
               {item}
             </motion.a>
@@ -96,7 +96,7 @@ export function Navigation({ isDarkMode, toggleTheme }: NavigationProps) {
                 <motion.a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="block px-4 py-2 text-sm hover:text-purple-500 transition-colors"
+                  className="block px-4 py-2 text-sm hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                   onClick={() => setIsOpen(false)}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
