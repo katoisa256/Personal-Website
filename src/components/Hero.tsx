@@ -44,7 +44,7 @@ export function Hero() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-2xl shadow-slate-900/20 lg:aspect-[5/6]">
             <img src="/2.png" alt="Kato Isa Omoding" className="h-full w-full object-cover object-center" />
           </div>
-          <div className="absolute bottom-20 left-0 flex flex-wrap gap-2 sm:-left-4">
+          <div className="absolute bottom-28 left-0 flex flex-wrap gap-2 sm:bottom-24 sm:-left-4">
             <motion.a
               href="#projects"
               whileHover={{ y: -4 }}
